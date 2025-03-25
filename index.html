@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rincones del Mundo</title>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/estilo.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <!-- Contenedor de la imagen de fondo -->
@@ -472,10 +477,299 @@
   </script>
   
 
+  <!-- ========== NUEVAS SECCIONES ========== -->
+  
+  <!-- Idea 2: Grid de Destinos con Tarjetas -->
+  <div class="grid-container">
+    <h3 class="text-center">Destinos Populares</h3>
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+      <div class="cell">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/07/23/01/16/heritage-5430081_640.jpg" alt="Japón">
+          <div class="card-section">
+            <h4>Japón</h4>
+            <p>Descubre templos ancestrales y modernidad.</p>
+            <span class="badge primary">Más visitado</span>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055_640.jpg" alt="Italia">
+          <div class="card-section">
+            <h4>Italia</h4>
+            <p>Arte, historia y gastronomía.</p>
+            <span class="badge warning">Oferta</span>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" alt="Polinesia">
+          <div class="card-section">
+            <h4>Polinesia</h4>
+            <p>Paraísos tropicales únicos.</p>
+            <span class="badge success">Nuevo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Idea 3: Tabs para Continentes -->
+  <div class="grid-container">
+    <h3 class="text-center">Explora por Regiones</h3>
+    <ul class="tabs" data-tabs id="continent-tabs">
+      <li class="tabs-title is-active"><a href="#asia">Asia</a></li>
+      <li class="tabs-title"><a href="#europa">Europa</a></li>
+      <li class="tabs-title"><a href="#america">América</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="continent-tabs">
+      <div class="tabs-panel is-active" id="asia">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-6">
+            <img src="https://cdn.pixabay.com/photo/2015/07/29/22/56/taj-mahal-866692_640.jpg" alt="Taj Mahal">
+          </div>
+          <div class="cell medium-6">
+            <h5>Experiencias en Asia</h5>
+            <p>Desde los templos de Kyoto hasta las playas de Tailandia, Asia ofrece una mezcla única de tradición y modernidad.</p>
+            <ul>
+              <li>Ceremonias de té en Japón</li>
+              <li>Trekking en el Himalaya</li>
+              <li>Playas vírgenes en Filipinas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-panel" id="europa">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-6">
+            <img src="https://cdn.pixabay.com/photo/2020/07/12/16/41/colosseum-5397899_640.jpg" alt="Coliseo">
+          </div>
+          <div class="cell medium-6">
+            <h5>Encanto Europeo</h5>
+            <p>Descubre la rica historia, arquitectura impresionante y culturas diversas del viejo continente.</p>
+            <ul>
+              <li>Ruta del vino en Francia</li>
+              <li>Museos en Ámsterdam</li>
+              <li>Fiordos noruegos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-panel" id="america">
+        <div class="grid-x grid-margin-x">
+          <div class="cell medium-6">
+            <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" alt="Polinesia">
+          </div>
+          <div class="cell medium-6">
+            <h5>Aventuras Americanas</h5>
+            <p>Desde las selvas de Brasil hasta las montañas de Canadá, América lo tiene todo.</p>
+            <ul>
+              <li>Machu Picchu en Perú</li>
+              <li>Playas del Caribe</li>
+              <li>Parques Nacionales de EE.UU.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Idea 4: Callout para Ofertas -->
+  <div class="grid-container">
+    <div class="callout success">
+      <div class="grid-x align-middle">
+        <div class="cell medium-9">
+          <h5>¡Oferta Especial de Verano!</h5>
+          <p>Reserva antes del 30 de junio y obtén un 15% de descuento en todos los paquetes a Europa. Incluye vuelos, alojamiento y 2 excursiones.</p>
+        </div>
+        <div class="cell medium-3 text-right">
+          <button class="button large">Ver Ofertas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Idea 5: Lista de Precios -->
+  <div class="grid-container">
+    <h3 class="text-center">Nuestros Paquetes</h3>
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-4">
+        <ul class="pricing-table">
+          <li class="title">Básico</li>
+          <li class="price">$799<small>/persona</small></li>
+          <li class="description">Ideal para mochileros</li>
+          <li class="bullet-item">Vuelo económico</li>
+          <li class="bullet-item">Hotel 3 estrellas</li>
+          <li class="bullet-item">1 Excursión incluida</li>
+          <li class="cta-button"><a class="button hollow expanded">Consultar</a></li>
+        </ul>
+      </div>
+      <div class="cell medium-4">
+        <ul class="pricing-table">
+          <li class="title">Estándar</li>
+          <li class="price">$1,199<small>/persona</small></li>
+          <li class="description">Perfecto para parejas</li>
+          <li class="bullet-item">Vuelo clase turista</li>
+          <li class="bullet-item">Hotel 4 estrellas</li>
+          <li class="bullet-item">3 Excursiones incluidas</li>
+          <li class="bullet-item">Desayuno diario</li>
+          <li class="cta-button"><a class="button expanded">Reservar</a></li>
+        </ul>
+      </div>
+      <div class="cell medium-4">
+        <ul class="pricing-table">
+          <li class="title">Premium</li>
+          <li class="price">$2,499<small>/persona</small></li>
+          <li class="description">Experiencia de lujo</li>
+          <li class="bullet-item">Vuelo clase ejecutiva</li>
+          <li class="bullet-item">Hotel 5 estrellas</li>
+          <li class="bullet-item">Todas las excursiones</li>
+          <li class="bullet-item">Comidas gourmet</li>
+          <li class="bullet-item">Traslados privados</li>
+          <li class="cta-button"><a class="button expanded">Personalizar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Idea 6: Barra de Progreso para Itinerarios -->
+  <div class="grid-container">
+    <div class="itinerary-progress">
+      <h5>Tu itinerario en París (3/5 días completados)</h5>
+      <div class="progress" role="progressbar">
+        <div class="progress-meter" style="width: 60%"></div>
+      </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-2">
+          <p class="text-center">Día 1<br><small>Llegada</small></p>
+        </div>
+        <div class="cell small-2">
+          <p class="text-center">Día 2<br><small>Torre Eiffel</small></p>
+        </div>
+        <div class="cell small-2">
+          <p class="text-center">Día 3<br><small>Louvre</small></p>
+        </div>
+        <div class="cell small-2">
+          <p class="text-center">Día 4<br><small>Versalles</small></p>
+        </div>
+        <div class="cell small-2">
+          <p class="text-center">Día 5<br><small>Montmartre</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Idea 7: Video Embed Local -->
+  <div class="grid-container">
+    <h3 class="text-center">Conoce nuestros destinos</h3>
+    <div class="responsive-embed widescreen">
+      <video controls poster="https://cdn.pixabay.com/photo/2017/06/28/10/03/paris-2450046_640.jpg">
+        <source src="https://videocdn.cdnpk.net/videos/2fd82354-6448-4bb7-87ff-926f76b621d1/horizontal/previews/clear/large.mp4?token=exp=1742870139~hmac=2e686853ff50d1eb4e7c423a6ec054ec2f7de886432877fc14d310d3ac896be2" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+  </div>
+
+  <!-- Idea 8: Acordeón FAQ -->
+  <div class="grid-container">
+    <h3 class="text-center">Preguntas Frecuentes</h3>
+    <ul class="accordion" data-accordion>
+      <li class="accordion-item is-active" data-accordion-item>
+        <a href="#" class="accordion-title">¿Qué documentación necesito para viajar?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Los requisitos varían según el destino y tu nacionalidad. Generalmente necesitarás:</p>
+          <ul>
+            <li>Pasaporte con al menos 6 meses de validez</li>
+            <li>Visa (dependiendo del país)</li>
+            <li>Vacunas (para ciertos destinos)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">¿Cuál es la mejor época para viajar?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Depende completamente del destino:</p>
+          <ul>
+            <li>Europa: Mayo-Junio o Septiembre-Octubre (temporada media)</li>
+            <li>Caribe: Diciembre-Abril (temporada seca)</li>
+            <li>Asia: Varía por región (evitar monzones)</li>
+          </ul>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">¿Qué incluyen los paquetes?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Nuestros paquetes generalmente incluyen:</p>
+          <ul>
+            <li>Vuelos ida y vuelta</li>
+            <li>Alojamiento en hoteles seleccionados</li>
+            <li>Algunas excursiones (varía por paquete)</li>
+            <li>Asistencia al viajero 24/7</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Idea 9: Testimonios -->
+  <div class="grid-container">
+    <h3 class="text-center">Lo que dicen nuestros viajeros</h3>
+    <div class="grid-x grid-margin-x">
+      <div class="cell medium-4">
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_640.jpg" width="80">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <blockquote>
+              "¡La mejor organización! Todo salió perfecto en nuestro viaje a Japón"
+              <cite>Carlos M., México</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="cell medium-4">
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_640.jpg" width="80">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <blockquote>
+              "Increíble experiencia en Italia, cada detalle bien planeado"
+              <cite>Ana L., España</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="cell medium-4">
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_640.jpg" width="80">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <blockquote>
+              "Repetiría sin dudarlo, el tour por Grecia fue mágico"
+              <cite>Luisa T., Argentina</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FIN DE NUEVAS SECCIONES ========== -->
+<br><br><br><br><br><br><br><br><br>
   
 <h6 id="h6">El viaje no termina aquí</h6>
+<br>
 <p class="p2">En Rincones del Mundo, hemos recorrido juntos destinos increíbles, compartido consejos útiles y descubierto experiencias que nos han acercado a la esencia de viajar: explorar, aprender y conectar. Pero esto es solo el comienzo. El mundo está lleno de rincones por descubrir, historias por vivir y aventuras que esperan a ser vividas.
 <br>
   Ya sea que tu próximo viaje te lleve a las cumbres más altas, a las playas más tranquilas o a las ciudades más vibrantes, recuerda que cada lugar tiene algo único que ofrecer. Lo importante es dar el primer paso, abrir tu mente y dejar que la curiosidad te guíe.</p>
