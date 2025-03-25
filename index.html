@@ -21,6 +21,7 @@
     
     <!-- Barra de navegación -->
     <div class="top-bar">
+<button class="mobile-menu-button" id="menuButton">☰</button>
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
           <li class="menu-text">Guía de Viajes</li>
@@ -806,5 +807,13 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.getElementById('menuButton').addEventListener('click', function() {
+    const menu = document.querySelector('.top-bar-left ul.menu');
+    menu.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
